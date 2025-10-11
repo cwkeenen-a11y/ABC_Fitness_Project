@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Fitness Studio | Gallery</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-branding">
+            <img src="images/logo.png" alt="ABC Fitness Studio Logo" width="50"> 
+            <h1>Gallery</h1> 
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="shop-container">
+            <div class="cart-action">
+                <button id="view-cart-btn">View Shopping Cart</button>
+            </div>
+
+            <h2>Available Equipment and Services</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Image</th>
+                        <th>Item Name</th>
+                        <th>Brief Description</th>
+                        <th>Add to Cart</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/groupYoga.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Group Yoga</td>
+                        <td>Find your flow alongside others in a serene, supportive environment. These classes offer varied sequences, focusing on balance, strength, and collective energy. A great way to connect with the community while maintaining a consistent practice for physical and mental wellness.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="1">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/groupPilates.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Group Pilates</td>
+                        <td>Build core strength, improve posture, and increase body awareness using mats and simple props. This class provides a structured, challenging workout focused on control and precision, offering a fantastic way to develop long, lean muscles with the encouragement of your peers.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="2">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/groupKickboxing.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Group Kickboxing</td>
+                        <td>High-energy, full-body cardiovascular training set to motivational music. Join the community for a fun, stress-relieving class that teaches basic self-defense moves while delivering an intense workout that boosts stamina and power. All levels welcome.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="3">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/individualYoga.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Individual Yoga</td>
+                        <td>Deepen your practice and address specific physical goals or injuries with a private instructor. Focus entirely on your breath, alignment, and sequence, creating a harmonious, customized session designed to accelerate your flexibility and mental balance.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="4">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/individualPilates.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Individual Pilates</td>
+                        <td>Achieve maximum core control and precise movement with a tailored session. Our instructor will use specialized equipment and techniques to target your unique muscle imbalances, providing instant feedback to build stability and endurance faster than in a group setting.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="5">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/individualKickboxing.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Individual Kickboxing</td>
+                        <td>Master technique and maximize your workout in a one-on-one setting. Receive personalized instruction tailored to your fitness level, goals, and pace, ensuring proper form for safety and peak performance. Perfect for beginners and advanced fighters alike.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="6">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/teeShirt.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>T-Shirt</td>
+                        <td>Soft, breathable, and designed for movement. Our custom-branded T-shirt features a moisture-wicking blend, making it ideal for everything from a high-energy Zumba class to a casual day out. Show your support for the ABC community!</td>
+                        <td><button class="add-to-cart-btn" data-product-id="7">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/yogaMat.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Yoga Mat</td>
+                        <td>Enhance your practice with our high-density, non-slip premium yoga mat. Provides the perfect balance of cushioning and stability for all poses. Marked with the ABC Fitness Studio logo, it's the ideal foundation for your journey toward balance and harmony.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="8">Add To Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/waterBottle.png" alt="Item Image" width="100" class="item-image"></td>
+                        <td>Water Bottle</td>
+                        <td>Stay hydrated and sustainable on the go! This premium, double-insulated water bottle keeps your drinks cold during intense workouts or warm during recovery. Features the ABC Fitness Studio logo, reminding you to prioritize wellness wherever you are.</td>
+                        <td><button class="add-to-cart-btn" data-product-id="9">Add To Cart</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content-container">
+            <div class="newsletter-section">
+                <p>Subscribe to our Newsletter:</p>
+                <form action="#" method="POST">
+                    <label for="email-subscribe" class="sr-only">Email:</label>
+                    <input type="email" id="email-subscribe" name="email" placeholder="email@example.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-links-social">
+                <div class="footer-nav-links">
+                    <p>Navigation Links:</p>
+                    <a href="index.html">Home</a> | 
+                    <a href="gallery.html">Gallery</a> | 
+                    <a href="about.html">About Us</a> | 
+                    <a href="community.html">Community</a>
+                </div>
+                <div class="social-links">
+                    <p>Social Media:</p>
+                    <a href="#"><img src="facebook_icon.png" alt="Facebook" width="20"></a>
+                    <a href="#"><img src="instagram_icon.png" alt="Instagram" width="20"></a>
+                    <a href="#"><img src="twitter_icon.png" alt="Twitter" width="20"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
