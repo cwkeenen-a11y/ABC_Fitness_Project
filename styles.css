@@ -1,0 +1,627 @@
+/*
+|---------------------------------------------------------
+| 1. GLOBAL & VARIABLES
+|---------------------------------------------------------
+*/
+
+:root {
+    /* COLOR PALETTE */
+    --color-brisk-blue: #17253F;      
+    --color-intensity-indigo: #2343BD;
+    --color-aqua-pulse: #91B9D2;      
+    --color-lime-lift: #DEF479;       
+    --color-endurance-white: #FCFCFC; 
+    --color-detritus-green: #00231C;  
+    
+    /* TYPOGRAPHY */
+    --font-title: 'Arial Bold', Arial, sans-serif;
+    --font-subtitle: 'Comfortaa', cursive; 
+    --font-body: Calibri, sans-serif;
+}
+
+* {
+    /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-detritus-green); 
+    background-color: var(--color-endurance-white);
+    line-height: 1.5; 
+}
+
+a {
+    color: var(--color-intensity-indigo);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-brisk-blue);
+}
+
+/*
+|---------------------------------------------------------
+| 2. TYPOGRAPHY
+|---------------------------------------------------------
+*/
+
+h1 { /* Title Large */
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-detritus-green);
+    margin-bottom: 0.5em;
+}
+
+h2 { /* Title */
+    font-family: var(--font-title);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-detritus-green);
+    margin-bottom: 0.5em;
+}
+
+h3 { /* Subtitle */
+    font-family: var(--font-subtitle);
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--color-detritus-green);
+    margin-bottom: 0.5em;
+}
+
+p, li { /* Body */
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+
+.body-large { 
+    font-size: 20px;
+}
+
+.body-strong { 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.caption { 
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: var(--color-intensity-indigo);
+    color: var(--color-endurance-white); 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--color-brisk-blue); 
+}
+
+/*
+|---------------------------------------------------------
+| 3. LAYOUT & STRUCTURE
+|---------------------------------------------------------
+*/
+
+/* --- HEADER STYLING --- */
+
+header {
+    background-color: var(--color-brisk-blue); 
+    color: var(--color-endurance-white);
+    padding: 15px 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.header-branding img {
+    background-color: var(--color-endurance-white); 
+    border-radius: 50%; 
+    padding: 5px;
+}
+
+header h1 {
+    color: var(--color-endurance-white); 
+    font-size: 20px; 
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+/* --- FOOTER STYLING --- */
+
+footer {
+    background-color: var(--color-brisk-blue); 
+    color: var(--color-endurance-white);
+    padding: 30px 0;
+    border-top: 5px solid var(--color-intensity-indigo); 
+    font-size: 14px;
+}
+
+.footer-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.newsletter-section  {
+    flex: 1; 
+    min-width: 250px;
+}
+
+.newsletter-section input {
+    padding: 8px;
+    border: 1px solid var(--color-aqua-pulse);
+    margin-right: 5px;
+    width: 180px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+.copyright-bar {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    color: var(--color-aqua-pulse); 
+    line-height: 1.4;
+    margin-bottom: 0;
+    display: block;
+}
+
+footer a {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+/* --- IMAGE STYLING --- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*
+|---------------------------------------------------------
+| 4. PAGE-SPECIFIC LAYOUTS
+|---------------------------------------------------------
+*/ 
+
+main {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 20px;     
+}
+
+/* --- HOMEPAGE STYLING --- */
+
+.hero-section {
+    position: relative; 
+    height: 450px; 
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.6); 
+}
+
+.hero-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: var(--color-endurance-white); 
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: var(--color-lime-lift); 
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: var(--color-endurance-white);
+    margin-bottom: 20px;
+}
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-bottom: 40px;
+}
+
+.service-card, .promo-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--color-aqua-pulse); 
+    border-radius: 8px;
+    background-color: var(--color-endurance-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.service-card p {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.service-card a button {
+    margin-top: auto;
+}
+.service-card img {
+    width: 100%; 
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.promo-box {
+    background-color: var(--color-secondary); 
+    padding: 25px;
+    text-align: left;
+}
+
+.promo-box h3 {
+    color: var(--color-intensity-indigo); 
+}
+
+/* --- GALLERY PAGE STYLING --- */
+
+/* --- MODAL WINDOW STYLING --- */
+.modal-overlay {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-overlay.show-modal {
+    display: block; 
+}
+
+.modal-content {
+    background-color: var(--color-endurance-white);
+    margin: 15% auto; 
+    padding: 30px;
+    border: 1px solid var(--color-brisk-blue);
+    width: 80%; 
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: var(--color-intensity-indigo);
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    color: var(--color-brisk-blue);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--color-intensity-indigo);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-gallery table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 30px auto;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    background-color: var(--color-endurance-white);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.product-gallery thead th {
+    background-color: var(--color-brisk-blue); 
+    color: var(--color-endurance-white); 
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-title);
+    font-size: 18px;
+}
+
+.product-gallery tbody tr {
+    border-bottom: 1px solid var(--color-aqua-pulse); 
+}
+
+.product-gallery tbody tr:nth-child(even) {
+    background-color: rgba(145, 185, 210, 0.1); 
+}
+
+.product-gallery tbody tr:hover {
+    background-color: var(--color-aqua-pulse); 
+    transition: background-color 0.3s;
+}
+
+.product-gallery td {
+    padding: 20px 15px;
+    vertical-align: middle;
+    color: var(--color-detritus-green);
+}
+
+.product-gallery .product-image-cell img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--color-lime-lift); 
+}
+
+.product-gallery td button {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.cart-actions-footer {
+    text-align: center;
+    padding: 20px 0 40px; 
+}
+
+.cart-action-btn {
+    margin: 0 10px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: var(--color-intensity-indigo);
+    color: var(--color-endurance-white); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-action-btn:hover {
+    background-color: var(--color-brisk-blue); 
+}
+
+/* --- MODAL ITEM LIST STYLING --- */
+.modal-content .cart-item-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 15px 0;
+    text-align: left; 
+    border: 1px solid var(--color-aqua-pulse);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modal-content .cart-item-list li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+    color: var(--color-detritus-green);
+}
+
+.modal-content .cart-item-list li:last-child {
+    border-bottom: none; 
+}
+
+/* --- ABOUT US / CONTACT PAGE STYLING --- */
+
+.about-content-wrapper {
+    display: flex; 
+    gap: 40px; 
+    padding-top: 20px;
+}
+
+.about-text-column {
+    flex: 2; 
+    padding-right: 20px;
+}
+
+.contact-form-column {
+    flex: 1; 
+    background-color: var(--color-aqua-pulse); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text-column img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 5px solid var(--color-lime-lift); 
+}
+
+.contact-form-column h2 {
+    color: var(--color-brisk-blue); 
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--color-detritus-green);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-brisk-blue);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    background-color: var(--color-endurance-white); 
+}
+
+.form-group textarea {
+    resize: vertical; 
+    min-height: 100px;
+}
+
+/* Fix for Submit and Clear buttons */
+.form-actions {
+    display: flex;       
+    gap: 15px;           
+    margin-top: 20px;    
+    width: 100%;         
+}
+
+.form-actions button[type="submit"],
+.form-actions button[type="reset"] {
+    flex: 1;             
+    width: auto;         
+    text-align: center;
+}
+
+/* --- COMMUNITY PAGE STYLING --- */
+
+.community-grid {
+    padding: 20px 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.testimonial-item {
+    padding: 25px;
+    background-color: var(--color-aqua-pulse); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--color-intensity-indigo); 
+}
+
+.testimonial-item blockquote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--color-detritus-green);
+    margin-bottom: 15px;
+}
+
+.testimonial-item footer {
+    font-weight: bold;
+    color: var(--color-brisk-blue);
+    font-size: 14px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.event-card {
+    border: 1px solid var(--color-brisk-blue);
+    background-color: var(--color-endurance-white);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event-info h4 {
+    color: var(--color-intensity-indigo);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.event-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}

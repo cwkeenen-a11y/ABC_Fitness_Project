@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Fitness Studio | About Us</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-branding">
+            <img src="images/logo.png" alt="ABC Fitness Studio Logo" width="50"> 
+            <h1>About Us</h1> 
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-content-wrapper"> 
+            
+            <div class="about-text-column">
+                <article id="our-story">
+                    <h2>Our Story</h2>
+                    <p>ABC Fitness Studio was founded on the principle of holistic wellness, aiming to create a balanced, welcoming space for physical and mental health. We believe active living is a path to a happier life, supported by our expert instructors and diverse class offerings.</p>
+                </article>
+
+                <div id="business-hours">
+                    <h2>Business Hours</h2>
+                    <ul>
+                        <li>Monday - Friday: 6 a.m. to 8 p.m.</li>
+                        <li>Saturday: 8 a.m. to 6 p.m.</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form-column">
+                <h2>Feedback? Custom inquiry?</h2>
+                <form action="#" method="POST" id="client-feedback-form">
+                    
+                    <div class="form-group">
+                        <label for="name-input">Name:</label>
+                        <input type="text" id="name-input" name="name" placeholder="" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email-input">Email:</label>
+                        <input type="email" id="email-input" name="email" placeholder="email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone-input">Phone Number:</label>
+                        <input type="tel" id="phone-input" name="phone" placeholder="123-456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-input">Message/Order Details:</label>
+                        <textarea id="message-input" name="details" rows="8" placeholder="" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" id="contactSubmitBtn">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content-container">
+            <div class="newsletter-section">
+                <p>Subscribe to our Newsletter:</p>
+                <form action="#" method="POST">
+                    <label for="email-subscribe" class="sr-only">Email:</label>
+                    <input type="email" id="email-subscribe" name="email" placeholder="email@example.com" required>
+                    <button id="subscribeBtn">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-links-social">
+                <div class="footer-nav-links">
+                    <p>Navigation Links:</p>
+                    <a href="index.html">Home</a> | 
+                    <a href="gallery.html">Gallery</a> | 
+                    <a href="about.html">About Us</a> | 
+                    <a href="community.html">Community</a>
+                </div>
+                <div class="social-links">
+                    <p>Social Media:</p>
+                    <a href="#"><img src="facebook_icon.png" alt="Facebook" width="20"></a>
+                    <a href="#"><img src="instagram_icon.png" alt="Instagram" width="20"></a>
+                    <a href="#"><img src="twitter_icon.png" alt="Twitter" width="20"></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
